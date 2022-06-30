@@ -29,7 +29,10 @@ body {
         width: 100%;
     }
     .form-login{
-        margin-left: 40px;
+        /* margin-left: 40px; */
+        width: 340px;
+        margin: auto;
+
     }
     .input-group {
         position: relative;
@@ -51,7 +54,7 @@ body {
     }
     .input-group input {
         padding: 14px 15px;
-        width: 320px;
+        width: 90%;
         border: 3px solid #183549;
         outline: none;
         font-size: 14px;
