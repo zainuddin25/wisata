@@ -71,4 +71,78 @@ body {
         border-right: 2.5px solid #183549;
         margin-left: 5px;
     }
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    .button a {
+        position: relative;
+        background: #183549;
+        color: #183549;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-family: "Poppins";
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        padding: 8px 20px;
+        transition: 0.5s;
+        width: 150px;
+        text-align: center;
+    }
+    .button a:hover {
+        background: var(--clr);
+        color: var(--clr);
+        letter-spacing: 0.25em;
+        box-shadow: 0 0 30px var(--clr);
+    }
+    .button a:before {
+        content: '';
+        position: absolute;
+        inset: 2px;
+        background: #fff;
+    }
+    .button a span {
+        position: relative;
+        z-index: 1;
+    }
+    .button i {
+        position: absolute;
+        inset: 0;
+        display: block;
+    }
+    .button i::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 80%;
+        width: 10px;
+        height: 4px;
+        background: #fff;
+        transform: translateX(-50%) skewX(325deg);
+        transition: 0.5s;
+    }
+    .button a:hover i::before {
+        width: 20px;
+        left: 20%;
+    }
+    .button i::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 80%;
+        width: 10px;
+        height: 4px;
+        background: #fff;
+        transform: translateX(-50%) skewX(325deg);
+        transition: 0.5s;
+    }
+    .button a:hover i::after {
+        width: 20px;
+        right: 20%;
+    }
 }
